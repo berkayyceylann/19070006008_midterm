@@ -1,0 +1,9 @@
+using _19070006008_midterm.Models;
+
+namespace _19070006008_midterm.Data.Abstract
+{
+    public interface IUserHouseRepository : IRepository<UserHouse>
+    {
+        bool IsUserAssignedToHouse(int userId, int houseId);
+    }
+}
